@@ -1,0 +1,7 @@
+.title {
+    @apply text-2xl text-white text-center;
+}
+.form {
+    @apply flex flex-col gap-2 mt-4;
+    input {}
+}

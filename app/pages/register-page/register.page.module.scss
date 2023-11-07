@@ -1,0 +1,13 @@
+.title {
+    @apply text-2xl text-white text-center;
+}
+.form {
+    @apply flex flex-col gap-2 mt-4;
+    input {}
+    button {
+        @apply border-none duration-700;
+        &:hover {
+            @apply cursor-pointer bg-slate-500 border-none;
+        }
+    }
+}

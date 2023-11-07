@@ -1,0 +1,34 @@
+.widget__menu {
+    @apply absolute top-0 left-0 bg-slate-400 h-screen;
+}
+
+.menu__wrapper {
+    @apply p-4 w-[80px] duration-300 text-opacity-0;
+    &_active {
+        @apply p-4 w-[300px] duration-300 text-opacity-100;
+    }
+}
+.navigate__items {
+    @apply py-4 w-full relative;
+    &::after {
+        content: '';
+        @apply block h-[1px] w-full bg-white absolute bottom-2;
+    }
+}
+.navigate__item{
+    @apply flex items-center gap-2 p-2 transition-all;
+    &:hover {
+        @apply bg-black duration-500 rounded-sm;
+    }
+    span{
+        @apply uppercase ;
+        animation: text-animate;
+        animation-duration: 5ms;
+        transition: all ease-in;
+
+        @keyframes text-animate {
+            0% {opacity: 0; font-size: 0; }
+            100% {opacity: 1; font-size: 18px; transition-duration: 5s;}
+        }
+    }
+}
